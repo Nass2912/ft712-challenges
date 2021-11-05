@@ -1,6 +1,9 @@
 @import "components/prefooter.css";
 @import "components/navbar.css";
-
+@import "components/newsletter.css";
+@import "components/footer.css";
+@import "components/cards.css";
+@import "components/content.css";
 
 
 body {
@@ -14,6 +17,7 @@ a {
   text-decoration: none;
   padding: 16px 16px 0 16px;
   transition: 0.4s ease-in-out;
+  font-family: 'Roboto', sans-serif;
 }
 
 li > a:hover {
@@ -24,17 +28,8 @@ li > a:hover {
   width: 50%;
   padding-left: 20px;
   padding-right: 40px;
-  align-content: flex-end;
+  align-content: center;
 
-}
-
-.nav-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: sticky;
-  top: 0px;
-  transition: 0.8s all;
 }
 
 .top {
@@ -68,77 +63,8 @@ li > a:hover {
   color: white;
 }
 
-.btn {
-  padding: 15px 35px 15px 35px;
-  font-size: large;
-  border-radius: 4px;
-  border: 1px solid #303030;
-}
 
-.btn-cta {
-  color: rgb(255, 255, 255);
-  background-color: #30303040 ;
-}
 
-.btn-cta:hover {
-  background-color: #303030e3 ;
-}
-
-.dropbtn {
-  color: rgb(91, 148, 148);
-  padding: 16px 16px 0 16px;
-  margin-bottom: 16px;
-  font-size: large;
-  border: none;
-  transition: 2s ease-in-out;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-images > a > img {
-  width: 300px;
-  border-radius: 4px;
-}
-.dropdown-content-right {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  padding: 25px;
-  min-width: 40vw;
-  right: 10%;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content-left {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  justify-content: space-between;
-  align-items: center;
-  padding: 25px;
-  min-width: 40vw;
-  left: 10%;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content-right a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content-left a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
 
 .cards {
   display: flex;
@@ -148,52 +74,11 @@ li > a:hover {
 svg {
   width: 50vw;
 }
-.container-card{
-  display: flex;
-  justify-content: center;
-}
-.card-category {
-  margin: 60px 15px 60px 15px;
-  width: 28%;
-  height: 35vh;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  border-radius: 5px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-}
 
-.module-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #30303040;
-  z-index: -3;
-}
 
-.news-email-column {
-  padding: 3rem;
-  background-color: #303030e3;
-  height: 50%;
-}
 
-.news-heading {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-}
 
-.module-title {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: 600;
-  font-size: 30px;
-}
+
 
 .form {
   display: flex;
@@ -232,27 +117,8 @@ svg {
   background-color: #303030;
 }
 
-.news-module-bg {
-  width: 760px;
-  height: 320px;
-}
 
-.news-heading{
-  display: flex;
-    flex-direction: column;
-    align-items: start;
-    padding: 10px;
-    padding-left: 30px;
-}
 
-.newsletter-bloc{
-    background-color: rgb(51, 47, 47);
-    display: flex;
-    justify-content: space-between;
-    margin-bottom:40px;
-    align-items: center;
-    width: 60%;
-  }
 
 .news_footer {
   display: flex;
@@ -270,24 +136,8 @@ svg {
 
 }
 
-.footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  border-top: 1px solid #a5a5a5;
-  padding: 8px 0 19px;
-  margin-top: 20px;
 
-}
 
-.content-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 150px;
-    padding-right: 150px;
-}
 
 
 .dropdown-content-right a:hover {background-color: #ddd;}
