@@ -80,7 +80,7 @@
                         <a href="#">Grand Baie</a>
                         </div>
                     </li>
-                    <li><a href="#">Your Account</a></li>
+                    <li id="accountAddress"><a href="#">Your Account</a></li>
                 </ul>
             </div>
         </div>
@@ -344,6 +344,7 @@
             <div class="pf-index">
                 <div id="pointer"></div>
                 <div class="inside">
+                  <div class="arrow-right"></div>
                     <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
                     <h3>Best Shopping Experience</h3>
                     <p>We promise the fastest Delivery<br> on the Island!<br>Within 24hours </p>
@@ -352,6 +353,7 @@
             <div class="pf-child">
                 <div id="pointer-child"></div>
                 <div class="inside">
+                  <div class="arrow-right2"></div>
                     <i class="fa fa-truck" aria-hidden="true"></i>
                     <h3>Fast Delivery</h3>
                     <p>We promise the fastest Delivery<br> on the Island!<br>Within 24hours </p>
@@ -386,6 +388,8 @@
         <p> © copyright Fabrice Madré | Le Wagon (Web development Bootcamp) | Les Kokottes, Moka, Mauritius </p>
     </div>
     <!-- JQuery & Javascript Scripts-->
+
+
     <script>
      // ***navbar JS***
         const navbar = document.querySelector(".navbar");
@@ -399,6 +403,15 @@
             navWrapper.classList.remove("top");
         }
         });
-    </script>
+
+        //select button
+        const valider = document.getElementsByClassName("submit-button");
+        const yourAccount = document.querySelector(".input-element");
+        const accountAddress = document.getElementById("accountAddress");
+
+         valider.addEventListener("click", (event) => {
+            event.preventDefault();
+            accountAddress.innerHTML = yourAccount.value;
+     </script>
   </body>
 </html>

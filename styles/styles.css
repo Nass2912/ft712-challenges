@@ -151,3 +151,23 @@ svg {
 }
 
 .dropdown:hover .dropbtn {border-bottom: solid 1px #303030;}
+
+
+.arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+
+  border-left: 20px solid white;
+padding-right: 190px;
+}
+
+.arrow-right2 {
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid #303030;
+padding-right: 190px;
+}
